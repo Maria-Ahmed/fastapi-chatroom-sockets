@@ -60,3 +60,6 @@ async def websocket_endpoint(websocket: WebSocket, client_id: int):
         manager.disconnect(websocket)
         message = {"time":current_time,"clientId":client_id,"message":"Offline"}
         await manager.broadcast(json.dumps(message))
+
+
+        #lets try this change
